@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:padding="10dp"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -20,15 +20,15 @@
 
     <EditText
         android:id="@+id/editName"
-        android:layout_centerVertical="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:backgroundTint="@color/black"
         android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:layout_marginTop="20dp"
-        android:textColor="@color/black"
+        android:backgroundTint="@color/black"
+        android:gravity="center_horizontal"
         android:hint="@string/qual_seu_nome"
+        android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textStyle="italic"
         android:visibility="visible" />
@@ -37,9 +37,9 @@
         android:id="@+id/buttonsave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:layout_alignParentBottom="true"
         android:backgroundTint="@color/teal_700"
         android:onClick="clicksalvar"
         android:text="Salvar" />

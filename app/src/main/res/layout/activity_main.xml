@@ -4,9 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#3E6CDF"
     android:padding="10dp"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+    </View>
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -14,7 +22,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="Hello Word"
-        android:textColor="@color/black" />
+        android:textColor="#28DF41" />
 
 
 </RelativeLayout>
