@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">App Motivation</string>
+    <string name="vamos_comecar">Vamos Começar?</string>
+    <string name="qual_seu_nome">Qual seu nome?</string>
 </resources>
