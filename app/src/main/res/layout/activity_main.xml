@@ -4,25 +4,82 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3E6CDF"
-    android:padding="10dp"
     tools:context=".ui.MainActivity">
 
-    <View
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
-        >
-    </View>
+        android:background="@color/menu">
 
+        <ImageView
+            android:id="@+id/img_infinito"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:src="@drawable/ic_baseline_all_inclusive_24"
+            app:tint="@color/white" />
+
+
+        <ImageView
+            android:id="@+id/img_sorriso"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:src="@drawable/ic_happy"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/img_sol"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:src="@drawable/ic_baseline_brightness_7_24"
+            app:tint="@color/white" />
+    </LinearLayout>
 
     <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="NAME"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textFrase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Hello Word"
-        android:textColor="#28DF41" />
+        android:text="FRASE"
+        android:textSize="15sp" />
 
+    <View
+        android:id="@+id/barraDeFrase"
+        android:layout_width="200dp"
+        android:layout_height="3dp"
+        android:layout_below="@+id/textFrase"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/menu" />
+
+    <Button
+        android:id="@+id/btnNova"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/barraDeFrase"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="@color/menu"
+        android:text="NOVA FRASE"
+        android:textSize="18sp" />
 
 </RelativeLayout>
+
+
