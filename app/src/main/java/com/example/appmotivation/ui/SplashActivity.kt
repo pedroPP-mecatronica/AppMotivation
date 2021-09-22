@@ -17,26 +17,19 @@ class SplashActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_aplash)
-
         mSecurityPreferences = SecurityPreferences((this))
-
-        if (supportActionBar != null) {
-            supportActionBar!!.hide()
-        }
-        buttonsave.setOnClickListener(this)
-
-
+        btn_save.setOnClickListener(this)
     }
 
     override fun onClick(view: View) {
-        val id = view?.id
-        if (id == R.id.buttonsave) {
+        val id = view.id
+        if (id == R.id.btn_save) {
             handleSave()
         }
     }
 
     private fun handleSave() {
-        val name = editName.text.toString()
+        val name = text_edit_name.text.toString()
 
         if (name != "") {
             mSecurityPreferences.storeString("name", name)
